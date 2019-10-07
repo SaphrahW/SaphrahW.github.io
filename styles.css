@@ -1,0 +1,33 @@
+body{
+    font-family: Roboto;
+    margin: 0px;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: rgb(144, 184, 53);
+    color: white;
+  }
+  
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.about-me{
+    flex: 30%;
+    background-color: lightgray;
+    padding: 20px;
+    color: black;
+}
+.work-experience{
+    flex: 70%;
+    padding-left:40px;
+}
+
+  img{
+      border-radius: 150%;
+      height: 75 px;
+  }

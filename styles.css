@@ -1,15 +1,15 @@
-.body{
+body{
     display: grid;
-    grid-template-rows: 10vw 40vw;    
+    grid-template-rows: 1fr auto;  
+    grid-template-columns: 1fr 3fr 7fr 1fr; 
     font-family: Roboto;
-    margin: 0px;
-    
+    margin: 0px; 
 }
-
 
 .header{
     background-color: darkcyan;
-    grid-column-start: 1/span 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
     text-align: center;
     padding: 20px;
     margin-bottom: 40px;
@@ -36,13 +36,11 @@
     flex-direction: row;
 }
 .contact-bar{
-
-    margin-left: 40px;
+    grid-column-start: 2;
+    grid-column-end: 3;
     padding:40px;
     background-color: lightgray;
-    width: 20vw;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 
@@ -54,7 +52,8 @@
 }
 
 .main-bar{
-    margin-right: 40px;
+    grid-column-start: 3;
+    grid-column-end: 4;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -75,6 +74,14 @@ a,p,ul{
 
 .icons{
     height:20px;
-    margin: 2px;
+}
+
+.social{
+    margin: 10px;
+}
+.date{
+  float:left;
+  padding-right:40px;
+  display:inline-block
 }
 
